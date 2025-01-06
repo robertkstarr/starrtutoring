@@ -11,8 +11,8 @@ import Typography from "@mui/material/Typography";
 import * as React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-const pages = ["Tutoring Services", "About Me", "Contact"];
-const OFFSET = 96;
+const pages = ["Home", "Tutoring Services", "About Me", "Contact"];
+const OFFSET = 70;
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -116,7 +116,12 @@ function Header() {
                     key={page}
                     href={"#" + page}
                     onClick={handleCloseNavMenu}
-                    sx={{ my: 2, color: "white", display: "block" }}
+                    sx={{
+                      my: 2,
+                      color: "white",
+                      display: "block",
+                      marginX: ".5rem",
+                    }}
                     variant={"contained"}
                     offset={OFFSET}
                   >
