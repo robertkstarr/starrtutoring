@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import "./App.css";
 import Content from "./Content/Content";
 import SiteFooter from "./Footer/footer";
@@ -5,11 +6,19 @@ import Header from "./Header/header";
 
 function App() {
   return (
-    <div id="Home">
+    <Box
+      id="Home"
+      display={"flex"}
+      alignItems={"center"}
+      flexDirection={"column"}
+      width={"100vw"}
+    >
       <Header />
-      <Content />
+      <Box maxWidth={"75rem"}>
+        <Content />
+      </Box>
       <SiteFooter />
-    </div>
+    </Box>
   );
 }
 
