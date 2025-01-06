@@ -9,7 +9,7 @@ const SiteFooter = () => {
         sx={{
           top: "auto",
           bottom: 0,
-          margin: "1rem",
+          marginTop: "1rem",
           display: "flex",
           alignItems: "center",
         }}

@@ -1,5 +1,5 @@
 import Obfuscate from "react-obfuscate";
-import DefaultComponent from "../DefaultComponent/DefaultComponent";
+import DefaultComponent from "../DefaultComponents/DefaultComponent";
 
 const Contact = () => {
   return (

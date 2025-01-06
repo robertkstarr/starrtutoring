@@ -10,8 +10,9 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { SECTION_HEADINGS } from "../Content/Content";
 
-const pages = ["Home", "Tutoring Services", "About Me", "Contact"];
+const PAGES = ["Home", ...SECTION_HEADINGS];
 const OFFSET = 70;
 
 function Header() {
@@ -74,7 +75,7 @@ function Header() {
                   onClose={handleCloseNavMenu}
                   sx={{ display: { xs: "block", md: "none" } }}
                 >
-                  {pages.map((page) => (
+                  {PAGES.map((page) => (
                     <MenuItem key={page} onClick={handleCloseNavMenu}>
                       <Typography sx={{ textAlign: "center" }}>
                         <AnchorLink offset={OFFSET} href={"#" + page}>
@@ -110,7 +111,7 @@ function Header() {
                   display: { xs: "none", md: "flex" },
                 }}
               >
-                {pages.map((page) => (
+                {PAGES.map((page) => (
                   <Button
                     component={AnchorLink}
                     key={page}
