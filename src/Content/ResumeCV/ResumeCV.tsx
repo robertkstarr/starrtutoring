@@ -12,7 +12,7 @@ const ResumeCV = () => {
   ];
 
   return (
-    <DefaultComponent heading="Resume/CV Section">
+    <DefaultComponent heading="Resume/CV">
       <>
         {RESUME_COMPONENTS.map((element, index) => {
           return (
