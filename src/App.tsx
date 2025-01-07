@@ -12,6 +12,7 @@ function App() {
       alignItems={"center"}
       flexDirection={"column"}
       width={"100vw"}
+      color={"black"}
     >
       <Header />
       <Box maxWidth={"75rem"}>
