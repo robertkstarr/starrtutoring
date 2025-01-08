@@ -72,7 +72,10 @@ function Header() {
                 >
                   {PAGES.map((page) => (
                     <MenuItem key={page} onClick={handleCloseNavMenu}>
-                      <Typography sx={{ textAlign: "center" }}>
+                      <Typography
+                        color="secondary"
+                        sx={{ textAlign: "center" }}
+                      >
                         <AnchorLink offset={OFFSET} href={"#" + page}>
                           {page}
                         </AnchorLink>
