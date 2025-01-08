@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import DefaultComponent from "../DefaultComponents/DefaultComponent";
 import ResumeDivider from "./ResumeDivider";
 import AdditionalSkills from "./Sections/AdditionalSkills";
@@ -16,10 +17,10 @@ const ResumeCV = () => {
       <>
         {RESUME_COMPONENTS.map((element, index) => {
           return (
-            <>
+            <Box key={index}>
               {element}
               {index != RESUME_COMPONENTS.length - 1 && <ResumeDivider />}
-            </>
+            </Box>
           );
         })}
       </>
