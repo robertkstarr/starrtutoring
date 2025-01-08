@@ -11,7 +11,6 @@ function App() {
       display={"flex"}
       alignItems={"center"}
       flexDirection={"column"}
-      width={"100vw"}
       color={"black"}
     >
       <Header />

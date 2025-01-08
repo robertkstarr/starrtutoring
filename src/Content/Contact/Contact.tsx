@@ -6,8 +6,8 @@ const Contact = () => {
   return (
     <DefaultComponent heading="Contact" sx={{ textAlign: "center" }}>
       <>
-        The best way to contact me is via email:
-        <Box>
+        Please email me with any questions or to arrange a session:
+        <Box margin={"1rem"}>
           <Obfuscate email="robert@starrtutoring.com" />
         </Box>
       </>
