@@ -1,5 +1,6 @@
 import DefaultComponent from "../DefaultComponents/DefaultComponent";
 import Paragraph from "../DefaultComponents/Paragraph";
+import { HOURLY_RATE } from "../ResumeCV/Sections/TLDR";
 
 const TutoringServices = () => {
   return (
@@ -25,8 +26,8 @@ const TutoringServices = () => {
           pinch, I've found that it's not ideal.
         </Paragraph>
         <Paragraph>
-          My current rate is $125/hour, though please reach out and ask about my
-          sliding scale if that's prohibitively expensive.
+          My current rate is ${HOURLY_RATE} per hour, though please reach out
+          and ask about my sliding scale if that's prohibitively expensive.
         </Paragraph>
       </>
     </DefaultComponent>
