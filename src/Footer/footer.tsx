@@ -15,7 +15,6 @@ const SiteFooter = () => {
     >
       <Toolbar>
         <Typography
-          variant="subtitle1"
           sx={{
             display: "flex",
             flexDirection: "column",

@@ -19,10 +19,11 @@ const AdditionalSkills = () => {
         <li>
           Running
           <ul>
-            <li>Participated in the Austin marathon three times</li>
+            <li>Ran the Austin marathon three times</li>
           </ul>
         </li>
         <li>Piano</li>
+        <li></li>
       </ul>
     </ResumeSection>
   );

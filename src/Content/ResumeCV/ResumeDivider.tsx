@@ -1,9 +1,16 @@
 import { Box, Divider } from "@mui/material";
 
-const ResumeDivider = () => {
+const ResumeDivider = (props: { width?: string }) => {
+  const width = props.width ? props.width : "75%";
   return (
     <Box justifyItems={"center"}>
-      <Divider variant="middle" sx={{ alignContent: "center", width: "75%" }} />
+      <Divider
+        variant="middle"
+        sx={{
+          alignContent: "center",
+          width: width,
+        }}
+      />
     </Box>
   );
 };

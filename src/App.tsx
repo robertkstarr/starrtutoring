@@ -8,12 +8,27 @@ import Header from "./Header/header";
 function App() {
   const theme = createTheme({
     palette: {
-      mode: "light",
       primary: {
-        main: "#ff3833",
+        main: "#3f51b5",
       },
       secondary: {
-        main: "#ff7445",
+        main: "#de1510",
+      },
+    },
+    typography: {
+      fontFamily: "PT Serif Display",
+      h6: {
+        fontWeight: "bold",
+        color: "#de1510",
+      },
+      subtitle1: {
+        color: "primary",
+        fontWeight: "bold",
+        fontSize: "1.5rem",
+      },
+      subtitle2: {
+        color: "grey",
+        fontStyle: "italic",
       },
     },
   });

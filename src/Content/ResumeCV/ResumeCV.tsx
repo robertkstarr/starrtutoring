@@ -1,7 +1,6 @@
 import { Box } from "@mui/material";
 import DefaultComponent from "../DefaultComponents/DefaultComponent";
 import ResumeDivider from "./ResumeDivider";
-import AdditionalSkills from "./Sections/AdditionalSkills";
 import Education from "./Sections/Education";
 import RelevantExperience from "./Sections/RelevantExperience";
 
@@ -9,7 +8,7 @@ const ResumeCV = () => {
   const RESUME_COMPONENTS = [
     <Education />,
     <RelevantExperience />,
-    <AdditionalSkills />,
+    // <AdditionalSkills />,
   ];
 
   return (

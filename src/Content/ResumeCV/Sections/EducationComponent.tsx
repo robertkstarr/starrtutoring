@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 const EducationComponent = (props: {
   degree: String;
@@ -10,13 +10,15 @@ const EducationComponent = (props: {
 }) => {
   return (
     <Box>
-      <h4>
+      <Typography variant="h6" marginTop="1rem">
         {props.degree} in {props.major}
-      </h4>
-      <Box marginLeft={"1rem"}>
-        <Box>{props.school}</Box>
+      </Typography>
+      <Box marginLeft={"1rem"} sx={{ ul: { marginTop: "0" } }}>
+        <Typography variant={"subtitle1"}>{props.school}</Typography>
         <Box>
-          {props.startYear} - {props.endYear}
+          <Typography variant="subtitle2">
+            {props.startYear} - {props.endYear}
+          </Typography>
         </Box>
         {props.children}
       </Box>
