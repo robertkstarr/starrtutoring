@@ -6,9 +6,13 @@ const Contact = () => {
   return (
     <DefaultComponent heading="Contact" sx={{ textAlign: "center" }}>
       <>
-        Please email me with any questions or to arrange a session:
+        Please call, text, or email me with any questions or to arrange a
+        session:
         <Box margin={"1rem"}>
-          <Obfuscate email="robert@starrtutoring.com" />
+          Telephone: <Obfuscate tel="818-305-5713" />
+        </Box>
+        <Box margin={"1rem"}>
+          Email: <Obfuscate email="robert@starrtutoring.com" />
         </Box>
       </>
     </DefaultComponent>

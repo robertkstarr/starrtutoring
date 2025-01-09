@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
+import Obfuscate from "react-obfuscate";
 import DefaultComponent from "../../DefaultComponents/DefaultComponent";
 
 export const HOURLY_RATE = "125";
@@ -37,6 +38,11 @@ const TLDR = () => {
           All levels of high school math including Algebra I and II, Geometry,
           Pre-Calculus, and AP Calculus. I also offer tutoring in AP Physics and
           SAT prep.
+        </Answer>
+        <Question>How can I get in contact with you?</Question>
+        <Answer>
+          Either email me at <Obfuscate email="robert@starrtutoring.com" /> or
+          call/text me at <Obfuscate tel="818-305-5713" />
         </Answer>
       </>
     </DefaultComponent>
