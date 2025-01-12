@@ -4,7 +4,7 @@ import Obfuscate from "react-obfuscate";
 import formulasImage from "../../../assets/images/formulas.jpg";
 import DefaultComponent from "../../DefaultComponents/DefaultComponent";
 
-export const HOURLY_RATE = "125";
+export const HOURLY_RATE = "100";
 export const EMAIL_ADDRESS = "robert@starrtutoring.com";
 export const PHONE_NUMBER = "818-378-4899";
 
@@ -41,7 +41,7 @@ const TLDR = () => {
           Newbury Park, and the San Fernando Valley.
         </Answer>
         <Question>How much do you charge?</Question>
-        <Answer>${HOURLY_RATE} per hour.</Answer>
+        <Answer>My current rate is ${HOURLY_RATE} per hour.</Answer>
         <Question>What subjects do you offer?</Question>
         <Answer>
           All levels of high school math including Algebra I and II, Geometry,
