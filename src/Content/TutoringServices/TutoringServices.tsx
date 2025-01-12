@@ -8,7 +8,7 @@ const TutoringServices = () => {
     <DefaultComponent
       heading="Tutoring Services"
       image={calculator}
-      imageRatio={0.5}
+      imageRatio={0.25}
       imageDescription="A man carrying a large calculator on his back."
     >
       <>
