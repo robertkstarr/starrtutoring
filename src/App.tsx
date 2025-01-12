@@ -37,7 +37,6 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Box
-        id="Home"
         display={"flex"}
         alignItems={"center"}
         flexDirection={"column"}

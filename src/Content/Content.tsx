@@ -26,7 +26,7 @@ export const SECTIONS = [
 const Content = () => {
   return (
     <Box justifyItems={"center"}>
-      <Box textAlign={"center"} marginTop={"1rem"}>
+      <Box textAlign={"center"} marginTop={"1rem"} id="back-to-top-anchor">
         <img src={Logo} alt="Starr Tutoring Logo — Math, Physics, SAT Prep." />
       </Box>
       <DefaultComponent heading="">
