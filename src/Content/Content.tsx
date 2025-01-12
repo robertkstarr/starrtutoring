@@ -25,7 +25,7 @@ export const SECTIONS = [
 
 const Content = () => {
   return (
-    <>
+    <Box justifyItems={"center"}>
       <Box textAlign={"center"} marginTop={"1rem"}>
         <img src={Logo} alt="Starr Tutoring Logo — Math, Physics, SAT Prep." />
       </Box>
@@ -35,6 +35,7 @@ const Content = () => {
           SAT Prep. Convenient, in your home, and adapted to your schedule.
         </Paragraph>
       </DefaultComponent>
+
       {SECTIONS.map((section, index) => {
         return (
           <Box key={"component" + index}>
@@ -43,7 +44,7 @@ const Content = () => {
           </Box>
         );
       })}
-    </>
+    </Box>
   );
 };
 

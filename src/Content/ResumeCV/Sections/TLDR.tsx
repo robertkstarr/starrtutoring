@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import Obfuscate from "react-obfuscate";
+import formulasImage from "../../../assets/images/formulas.jpg";
 import DefaultComponent from "../../DefaultComponents/DefaultComponent";
 
 export const HOURLY_RATE = "125";
@@ -25,7 +26,7 @@ const TLDR = () => {
   };
 
   return (
-    <DefaultComponent heading={"FAQs"}>
+    <DefaultComponent heading={"FAQs"} image={formulasImage}>
       <>
         <Question>In what locations do you offer tutoring?</Question>
         <Answer>
