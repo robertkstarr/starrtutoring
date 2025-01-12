@@ -5,6 +5,8 @@ import formulasImage from "../../../assets/images/formulas.jpg";
 import DefaultComponent from "../../DefaultComponents/DefaultComponent";
 
 export const HOURLY_RATE = "125";
+export const EMAIL_ADDRESS = "robert@starrtutoring.com";
+export const PHONE_NUMBER = "818-378-4899";
 
 const TLDR = () => {
   const Question = (props: { children: String }) => {
@@ -26,11 +28,17 @@ const TLDR = () => {
   };
 
   return (
-    <DefaultComponent heading={"FAQs"} image={formulasImage}>
+    <DefaultComponent
+      heading={"FAQs"}
+      image={formulasImage}
+      imageDescription="several mathetmatical formulas."
+    >
       <>
         <Question>In what locations do you offer tutoring?</Question>
         <Answer>
-          Anywhere within roughly an hour's drive of the Agoura Hills area.
+          Anywhere within roughly an hour's drive of the Agoura Hills area. This
+          includes Agoura Hills, Calabasas, Oak Park, Westlake, Thousand Oaks,
+          Newbury Park, and the San Fernando Valley.
         </Answer>
         <Question>How much do you charge?</Question>
         <Answer>${HOURLY_RATE} per hour.</Answer>
@@ -42,8 +50,8 @@ const TLDR = () => {
         </Answer>
         <Question>How can I get in contact with you?</Question>
         <Answer>
-          Either email me at <Obfuscate email="robert@starrtutoring.com" /> or
-          call/text me at <Obfuscate tel="818-305-5713" />
+          Either email me at <Obfuscate email={EMAIL_ADDRESS} /> or call/text me
+          at <Obfuscate tel={PHONE_NUMBER} />
         </Answer>
       </>
     </DefaultComponent>

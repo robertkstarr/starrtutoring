@@ -24,7 +24,8 @@ function App() {
       subtitle1: {
         color: "primary",
         fontWeight: "bold",
-        fontSize: "1.5rem",
+        fontSize: "1.25rem",
+        lineHeight: "2rem",
       },
       subtitle2: {
         color: "grey",

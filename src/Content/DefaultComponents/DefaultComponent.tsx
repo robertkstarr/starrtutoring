@@ -6,7 +6,14 @@ const DefaultComponent = (props: {
   heading?: string;
   image?: string;
   sx?: SxProps<Theme>;
+  imageOrientation?: string;
+  imageDescription?: string;
+  imageRatio?: number;
 }) => {
+  const orientation =
+    (props?.imageOrientation == "right" && "row-reverse") || "row";
+
+  const imageRatio = props.imageRatio || 1;
   return (
     <Box
       id={props.heading}
@@ -20,9 +27,15 @@ const DefaultComponent = (props: {
         display="flex"
         alignItems={"center"}
         maxWidth={"100vw"}
-        sx={{ flexDirection: { xs: "column", md: "row" } }}
+        sx={{ flexDirection: { xs: "column", md: orientation } }}
       >
-        {props.image && <ImageComponent imgSource={props.image} />}
+        {props.image && (
+          <ImageComponent
+            imgSource={props.image}
+            alt={props.imageDescription || ""}
+            flexGrow={imageRatio}
+          />
+        )}
         <Box flex={1}>
           <Typography flexGrow={1}>{props.children}</Typography>
         </Box>

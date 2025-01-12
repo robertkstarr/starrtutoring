@@ -1,12 +1,16 @@
 import { Box } from "@mui/material";
 import RobertAndMax from "../assets/images/carrying-max.jpg";
 
-const ImageComponent = (props: { imgSource?: string }) => {
+const ImageComponent = (props: {
+  imgSource?: string;
+  flexGrow: number;
+  alt: string;
+}) => {
   return (
     <Box
       width="auto"
       height="auto"
-      flex={1}
+      flex={props.flexGrow}
       display={"flex"}
       justifyContent={"center"}
       alignItems={"center"}
@@ -21,6 +25,7 @@ const ImageComponent = (props: { imgSource?: string }) => {
         maxHeight={"10%"}
         maxWidth={"80%"}
         margin={"1rem"}
+        alt={props.alt}
       />
     </Box>
   );

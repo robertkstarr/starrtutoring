@@ -1,9 +1,15 @@
+import RobertAndMax from "../../assets/images/carrying-max.jpg";
 import DefaultComponent from "../DefaultComponents/DefaultComponent";
 import Paragraph from "../DefaultComponents/Paragraph";
-
 const AboutMe = () => {
   return (
-    <DefaultComponent heading="About Me">
+    <DefaultComponent
+      heading="About Me"
+      imageOrientation="right"
+      image={RobertAndMax}
+      imageRatio={0.5}
+      imageDescription="a picture of me holding a bulldog."
+    >
       <>
         <Paragraph>
           My name is Robert Starr and I've been a teacher for the majority of my
@@ -20,7 +26,7 @@ const AboutMe = () => {
         </Paragraph>
         <Paragraph>
           While at CSUN, in addition to performing my research and attending
-          classes, I also TAed an introductory physics course designed for
+          classes, I also taught an introductory physics course designed for
           Pre-Med students. This was the highlight of my learning experience at
           it allowed me to not only teach, but teach students who were not
           necessarily "Physics-brained." While these students were extremely
@@ -30,13 +36,12 @@ const AboutMe = () => {
           intimate knowledge of the material and a greater understanding.
         </Paragraph>
         <Paragraph>
-          After receiving my Master's Degree, I moved out of California for the
-          first time in my life to Texas where I pursued a PhD at UT Austin. In
-          addition to my research (where I spent my first two years studying
-          molecular motors in a biophysics lab and the remainder of my time in a
-          theory group running molecular dynamics simulations), I TAed a similar
-          lab to the one I taught at CSUN and wrote a weekly science column for
-          the student paper: The Daily Texan.
+          After receiving my Master's Degree, I moved out of California to Texas
+          where I pursued a PhD at UT Austin. There, I performed research
+          related to molecular motors in a biophysics lab before moving to a
+          theory group running molecular dynamics simulations. I also taught a
+          similar lab to the one I had at CSUN and wrote a popular weekly
+          science column for the student paper: The Daily Texan.
         </Paragraph>
         <Paragraph>
           While I enjoyed the research, my focus was on education and science
@@ -45,9 +50,16 @@ const AboutMe = () => {
         </Paragraph>
         <Paragraph>
           I left the university in 2021 to focus on my full-time job as a
-          software engineer for Indeed before eventually losing my job along
-          with about 1000 of my co-workers in a company-wide mass-layoff
-          affecting roughly 10% of employees.
+          software engineer for Indeed until, after over five years at the
+          company, I lost my job along with about 1000 of my co-workers in a
+          company-wide mass-layoff affecting roughly 10% of employees.
+        </Paragraph>
+        <Paragraph>
+          Discouraged from returning to the world of tech, I'd rather be working
+          one-on-one with students, pursuing my passion of teaching, spreading
+          knowledge and understanding instead of as a code monkey. Meanwhile,
+          I'm also working on a novel and several screenplays and enjoying a
+          growing collection of creative hobbies.
         </Paragraph>
       </>
     </DefaultComponent>
