@@ -6,7 +6,7 @@ const ResumeSection = (props: { heading: String; children?: JSX.Element }) => {
       <Typography margin=".5rem" variant="h5" color="primary">
         {props.heading}
       </Typography>
-      <Box>{props.children}</Box>
+      <Box marginLeft={".5rem"}>{props.children}</Box>
     </>
   );
 };
