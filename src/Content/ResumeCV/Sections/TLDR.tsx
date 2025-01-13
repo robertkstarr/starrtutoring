@@ -32,6 +32,7 @@ const TLDR = () => {
       heading={"FAQs"}
       image={formulasImage}
       imageDescription="several mathetmatical formulas."
+      imageRatio={0.8}
     >
       <>
         <Question>In what locations do you offer tutoring?</Question>
