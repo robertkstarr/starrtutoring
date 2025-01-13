@@ -13,7 +13,7 @@ const EducationComponent = (props: {
       <Typography variant="h6">
         {props.degree} in {props.major}
       </Typography>
-      <Box marginLeft={"1rem"} sx={{ ul: { marginTop: "0" } }}>
+      <Box sx={{ ul: { marginTop: "0" } }}>
         <Typography variant={"subtitle1"}>{props.school}</Typography>
         <Box>
           <Typography variant="subtitle2">
