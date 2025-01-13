@@ -1,5 +1,5 @@
 import { Box, Divider } from "@mui/material";
-import Logo from "../assets/Logo.png";
+import Logo from "../assets/Logo2.png";
 import AboutMe from "./About Me/AboutMe";
 import Contact from "./Contact/Contact";
 import DefaultComponent from "./DefaultComponents/DefaultComponent";

@@ -31,7 +31,7 @@ const TLDR = () => {
     <DefaultComponent
       heading={"FAQs"}
       image={formulasImage}
-      imageDescription="several mathetmatical formulas."
+      imageDescription="several mathematical formulas."
       imageRatio={0.8}
     >
       <>
