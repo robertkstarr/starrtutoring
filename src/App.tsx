@@ -22,10 +22,10 @@ function App() {
         color: "black",
       },
       subtitle1: {
-        color: "primary",
+        color: "#3f51b5",
         fontWeight: "bold",
-        fontSize: "1.25rem",
-        lineHeight: "2rem",
+        fontSize: "1rem",
+        lineHeight: "1.5rem",
       },
       subtitle2: {
         color: "grey",

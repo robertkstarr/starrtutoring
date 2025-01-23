@@ -1,4 +1,3 @@
-import ResumeDivider from "../ResumeDivider";
 import ResumeSection from "../ResumeSection";
 import EducationComponent from "./EducationComponent";
 
@@ -17,7 +16,7 @@ const Education = () => {
             <li>Resident Honors Program</li>
           </ul>
         </EducationComponent>
-        <ResumeDivider width="50%" />
+
         <EducationComponent
           degree={"MS"}
           school={"California State University at Northridge"}
@@ -40,7 +39,7 @@ const Education = () => {
             </li>
           </ul>
         </EducationComponent>
-        <ResumeDivider width="50%" />
+
         <EducationComponent
           degree={"PhD"}
           school={"University of Texas at Austin"}

@@ -9,9 +9,8 @@ const WorkHistoryComponent = (props: {
 }) => {
   return (
     <Box>
-      <Typography variant="h6">
-        {props.JobTitle} at {props.Employer}
-      </Typography>
+      <Typography variant="h6">{props.JobTitle}</Typography>
+      <Typography variant="subtitle1">{props.Employer}</Typography>
       <Box sx={{ ul: { marginTop: "0" } }}>
         <Box>
           <Typography variant="subtitle2">
