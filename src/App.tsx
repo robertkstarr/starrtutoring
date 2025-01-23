@@ -19,7 +19,7 @@ function App() {
       fontFamily: "PT Serif Display",
       h6: {
         fontWeight: "bold",
-        color: "#de1510",
+        color: "black",
       },
       subtitle1: {
         color: "primary",

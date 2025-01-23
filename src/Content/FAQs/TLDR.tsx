@@ -1,8 +1,9 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import Obfuscate from "react-obfuscate";
-import formulasImage from "../../../assets/images/formulas.jpg";
-import DefaultComponent from "../../DefaultComponents/DefaultComponent";
+import formulasImage from "../../assets/images/formulas.jpg";
+import DefaultComponent from "../DefaultComponents/DefaultComponent";
+import Paragraph from "../DefaultComponents/Paragraph";
 
 export const HOURLY_RATE = "100";
 export const EMAIL_ADDRESS = "robert@starrtutoring.com";
@@ -12,7 +13,7 @@ const TLDR = () => {
   const Question = (props: { children: String }) => {
     return (
       <Box marginTop={"1rem"}>
-        <Typography color={"secondary"} variant={"h5"}>
+        <Typography color={"black"} variant={"h6"}>
           {props.children}
         </Typography>
       </Box>
@@ -33,16 +34,25 @@ const TLDR = () => {
       image={formulasImage}
       imageDescription="several mathematical formulas."
       imageRatio={0.8}
+      imageOrientation="right"
     >
       <>
         <Question>In what locations do you offer tutoring?</Question>
         <Answer>
-          Anywhere within roughly an hour's drive of the Agoura Hills area. This
-          includes Agoura Hills, Calabasas, Oak Park, Westlake, Thousand Oaks,
-          Newbury Park, and the San Fernando Valley.
+          <Paragraph>
+            Anywhere within roughly an hour's drive of the Agoura Hills area.
+            This includes Agoura Hills, Calabasas, Malibu, Oak Park, Westlake,
+            Thousand Oaks, Newbury Park, and the San Fernando Valley.
+          </Paragraph>
+          <Paragraph>
+            I may be able to offer tutoring outside my normal area for an
+            additional fee.
+          </Paragraph>
         </Answer>
         <Question>How much do you charge?</Question>
-        <Answer>My current rate is ${HOURLY_RATE} per hour.</Answer>
+        <Answer>
+          My current rate is <strong>${HOURLY_RATE} per hour</strong>.
+        </Answer>
         <Question>What subjects do you offer?</Question>
         <Answer>
           All levels of high school math including Algebra I and II, Geometry,

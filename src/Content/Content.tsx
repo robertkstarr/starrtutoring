@@ -4,8 +4,8 @@ import AboutMe from "./About Me/AboutMe";
 import Contact from "./Contact/Contact";
 import DefaultComponent from "./DefaultComponents/DefaultComponent";
 import Paragraph from "./DefaultComponents/Paragraph";
+import TLDR from "./FAQs/TLDR";
 import ResumeCV from "./ResumeCV/ResumeCV";
-import TLDR from "./ResumeCV/Sections/TLDR";
 import TutoringServices from "./TutoringServices/TutoringServices";
 
 export const SECTION_HEADINGS = [
@@ -16,9 +16,9 @@ export const SECTION_HEADINGS = [
   "FAQs",
 ];
 export const SECTIONS = [
-  { Heading: "About Me", Component: <AboutMe /> },
   { Heading: "Tutoring Services", Component: <TutoringServices /> },
-  { Heading: "Resume/CV", Component: <ResumeCV /> },
+  { Heading: "About Me", Component: <AboutMe /> },
+  { Heading: "Resumé/CV", Component: <ResumeCV /> },
   { Heading: "FAQs", Component: <TLDR /> },
   { Heading: "Contact", Component: <Contact /> },
 ];

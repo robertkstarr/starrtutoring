@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import Obfuscate from "react-obfuscate";
 import DefaultComponent from "../DefaultComponents/DefaultComponent";
-import { EMAIL_ADDRESS, PHONE_NUMBER } from "../ResumeCV/Sections/TLDR";
+import { EMAIL_ADDRESS, PHONE_NUMBER } from "../FAQs/TLDR";
 
 const Contact = () => {
   return (
