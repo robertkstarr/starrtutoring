@@ -10,10 +10,13 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { SECTION_HEADINGS } from "../Content/Content";
+import { SECTIONS } from "../Content/Content";
 import ScrollToTop from "./ScrollToTop";
 
-const PAGES = SECTION_HEADINGS;
+const PAGES = SECTIONS.map((section) => {
+  return section.Heading;
+});
+
 const OFFSET = 70;
 
 function Header() {

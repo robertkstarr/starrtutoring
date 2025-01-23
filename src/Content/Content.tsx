@@ -9,18 +9,18 @@ import TLDR from "./ResumeCV/Sections/TLDR";
 import TutoringServices from "./TutoringServices/TutoringServices";
 
 export const SECTION_HEADINGS = [
-  "FAQs",
   "About Me",
   "Tutoring Services",
   "Resume/CV",
   "Contact",
+  "FAQs",
 ];
 export const SECTIONS = [
-  <TLDR />,
-  <AboutMe />,
-  <TutoringServices />,
-  <ResumeCV />,
-  <Contact />,
+  { Heading: "About Me", Component: <AboutMe /> },
+  { Heading: "Tutoring Services", Component: <TutoringServices /> },
+  { Heading: "Resume/CV", Component: <ResumeCV /> },
+  { Heading: "FAQs", Component: <TLDR /> },
+  { Heading: "Contact", Component: <Contact /> },
 ];
 
 const Content = () => {
@@ -32,15 +32,16 @@ const Content = () => {
       <DefaultComponent heading="">
         <Paragraph>
           One-on-one tutoring in all levels of high school math, physics, and
-          SAT Prep. Convenient, in your home, and adapted to your schedule.
+          SAT Prep by someone with over 15 years teaching and tutoring
+          experience. Convenient, in your home, and adapted to your schedule.
         </Paragraph>
       </DefaultComponent>
 
       {SECTIONS.map((section, index) => {
         return (
-          <Box key={"component" + index}>
+          <Box key={"component" + index} id={section.Heading}>
             <Divider variant="middle" />
-            {section}
+            {section.Component}
           </Box>
         );
       })}

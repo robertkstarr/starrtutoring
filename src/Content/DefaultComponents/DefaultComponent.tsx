@@ -16,7 +16,6 @@ const DefaultComponent = (props: {
   const imageRatio = props.imageRatio || 1;
   return (
     <Box
-      id={props.heading}
       sx={{ width: "80vw", marginY: { xs: "1rem", md: "2rem" }, ...props.sx }}
       justifyContent={"center"}
     >
