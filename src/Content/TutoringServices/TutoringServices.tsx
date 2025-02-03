@@ -23,6 +23,7 @@ const TutoringServices = () => {
             <li>AP Calculus</li>
             <li>AP Physics</li>
             <li>SAT Test Prep</li>
+            <li>Essay Writing</li>
           </ul>
         </Paragraph>
         <Paragraph>
