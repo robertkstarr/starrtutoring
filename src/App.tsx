@@ -1,39 +1,12 @@
-import { Box, createTheme, ThemeProvider } from "@mui/material";
+import { Box, ThemeProvider } from "@mui/material";
 
 import "./App.css";
 import Content from "./Content/Content";
 import SiteFooter from "./Footer/footer";
 import Header from "./Header/header";
+import { theme } from "./Theming/DefaultTheme";
 
 function App() {
-  const theme = createTheme({
-    palette: {
-      primary: {
-        main: "#3f51b5",
-      },
-      secondary: {
-        main: "#de1510",
-      },
-    },
-    typography: {
-      fontFamily: "PT Serif Display",
-      h6: {
-        fontWeight: "bold",
-        color: "black",
-      },
-      subtitle1: {
-        color: "#3f51b5",
-        fontWeight: "bold",
-        fontSize: "1rem",
-        lineHeight: "1.5rem",
-      },
-      subtitle2: {
-        color: "grey",
-        fontStyle: "italic",
-      },
-    },
-  });
-
   return (
     <ThemeProvider theme={theme}>
       <Box

@@ -3,6 +3,7 @@ import RobertAndMax from "../assets/images/carrying-max.jpg";
 
 const ImageComponent = (props: {
   imgSource?: string;
+  maxHeight?: string;
   flexGrow: number;
   alt: string;
 }) => {
@@ -22,7 +23,7 @@ const ImageComponent = (props: {
         borderRadius={"5%"}
         width={"auto"}
         height={"auto"}
-        maxHeight={"10%"}
+        maxHeight={props.maxHeight ? props.maxHeight : "90%"}
         maxWidth={"80%"}
         margin={"1rem"}
         alt={props.alt}
