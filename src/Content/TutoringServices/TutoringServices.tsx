@@ -44,10 +44,7 @@ const TutoringServices = () => {
           I've also tutored via teleconferencing (Zoom, Google Meet, Teams,
           etc.) and while it'll work in a pinch, I've found that it's not ideal.
         </Paragraph>
-        <Paragraph>
-          My current rate is ${HOURLY_RATE} per hour, though please ask about my
-          sliding scale if that's prohibitively expensive.
-        </Paragraph>
+        <Paragraph>My current rate is ${HOURLY_RATE} per hour.</Paragraph>
       </>
     </DefaultComponent>
   );
