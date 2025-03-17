@@ -7,7 +7,6 @@ import Contact from "./Contact/Contact";
 import DefaultComponent from "./DefaultComponents/DefaultComponent";
 import Paragraph from "./DefaultComponents/Paragraph";
 import TLDR, { EMAIL_ADDRESS, PHONE_NUMBER } from "./FAQs/TLDR";
-import ResumeCV from "./ResumeCV/ResumeCV";
 import TutoringServices from "./TutoringServices/TutoringServices";
 
 export const SECTION_HEADINGS = [
@@ -18,10 +17,10 @@ export const SECTION_HEADINGS = [
   "FAQs",
 ];
 export const SECTIONS = [
-  { Heading: "Tutoring Services", Component: <TutoringServices /> },
+  { Heading: "Tutoring Services", Component: <TutoringServices darkMode /> },
   { Heading: "About Me", Component: <AboutMe /> },
-  { Heading: "Resumé/CV", Component: <ResumeCV /> },
-  { Heading: "FAQs", Component: <TLDR /> },
+  // { Heading: "Resumé/CV", Component: <ResumeCV darkMode /> },
+  { Heading: "FAQs", Component: <TLDR darkMode /> },
   { Heading: "Contact", Component: <Contact /> },
 ];
 

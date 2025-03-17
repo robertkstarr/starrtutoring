@@ -3,10 +3,12 @@ import createTheme from "@mui/material/styles/createTheme";
 export const theme = createTheme({
   palette: {
     primary: {
-      main: "#3f51b5",
+      main: "#c35b26",
+      light: "#FFF1E2",
+      dark: "#102E3C",
     },
     secondary: {
-      main: "#de1510",
+      main: "#268EC3",
     },
   },
   typography: {
@@ -16,13 +18,13 @@ export const theme = createTheme({
       color: "black",
     },
     subtitle1: {
-      color: "#3f51b5",
+      color: "#6C5D55",
       fontWeight: "bold",
       fontSize: "1rem",
       lineHeight: "1.5rem",
     },
     subtitle2: {
-      color: "grey",
+      color: "#405E6D",
       fontStyle: "italic",
     },
   },

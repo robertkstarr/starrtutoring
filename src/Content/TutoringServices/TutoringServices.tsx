@@ -1,15 +1,18 @@
 import calculator from "../../assets/images/carrying-calculator.jpg";
-import DefaultComponent from "../DefaultComponents/DefaultComponent";
+import DefaultComponent, {
+  DefaultComponentProps,
+} from "../DefaultComponents/DefaultComponent";
 import Paragraph from "../DefaultComponents/Paragraph";
 import { HOURLY_RATE } from "../FAQs/TLDR";
 
-const TutoringServices = () => {
+const TutoringServices = (props: DefaultComponentProps) => {
   return (
     <DefaultComponent
       heading="Tutoring Services"
       image={calculator}
       imageRatio={0.25}
       imageDescription="A man carrying a large calculator on his back."
+      {...props}
     >
       <>
         <Paragraph>

@@ -1,11 +1,13 @@
 import { Box } from "@mui/material";
-import DefaultComponent from "../DefaultComponents/DefaultComponent";
+import DefaultComponent, {
+  DefaultComponentProps,
+} from "../DefaultComponents/DefaultComponent";
 import ResumeDivider from "./ResumeDivider";
 import AdditionalSkills from "./Sections/AdditionalSkills";
 import Education from "./Sections/Education";
 import WorkHistory from "./Sections/WorkHistory";
 
-const ResumeCV = () => {
+const ResumeCV = (props: DefaultComponentProps) => {
   const RESUME_COMPONENTS = [
     <Education />,
     <WorkHistory />,
@@ -13,7 +15,7 @@ const ResumeCV = () => {
   ];
 
   return (
-    <DefaultComponent heading="Resumé/CV">
+    <DefaultComponent heading="Resumé/CV" {...props}>
       <>
         {RESUME_COMPONENTS.map((element, index) => {
           return (

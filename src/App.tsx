@@ -15,6 +15,7 @@ function App() {
         flexDirection={"column"}
         color={"black"}
         margin={0}
+        sx={{ backgroundColor: theme.palette.primary.light }}
       >
         <Header />
         <Box maxWidth={"75rem"}>

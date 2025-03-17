@@ -1,9 +1,11 @@
 import Amsterdam from "../../assets/images/amsterdam.jpg";
 import RobertAndMax from "../../assets/images/carrying-max.jpg";
-import DefaultComponent from "../DefaultComponents/DefaultComponent";
+import DefaultComponent, {
+  DefaultComponentProps,
+} from "../DefaultComponents/DefaultComponent";
 import Paragraph from "../DefaultComponents/Paragraph";
 
-const AboutMe = () => {
+const AboutMe = (props: DefaultComponentProps) => {
   return (
     <>
       <DefaultComponent
@@ -12,6 +14,7 @@ const AboutMe = () => {
         image={RobertAndMax}
         imageRatio={0.5}
         imageDescription="a picture of me holding a bulldog."
+        {...props}
       >
         <>
           <Paragraph>

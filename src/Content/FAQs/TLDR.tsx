@@ -1,19 +1,27 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 import React from "react";
 import Obfuscate from "react-obfuscate";
 import formulasImage from "../../assets/images/formulas.jpg";
-import DefaultComponent from "../DefaultComponents/DefaultComponent";
+import DefaultComponent, {
+  DefaultComponentProps,
+} from "../DefaultComponents/DefaultComponent";
 import Paragraph from "../DefaultComponents/Paragraph";
 
 export const HOURLY_RATE = "100";
 export const EMAIL_ADDRESS = "robert@starrtutoring.com";
 export const PHONE_NUMBER = "818-378-4899";
 
-const TLDR = () => {
+const TLDR = (props: DefaultComponentProps) => {
+  const darkMode = props.darkMode;
+  const theme = useTheme();
+
   const Question = (props: { children: String }) => {
     return (
       <Box marginTop={"1rem"}>
-        <Typography color={"black"} variant={"h6"}>
+        <Typography
+          color={(darkMode && theme.palette.secondary.main) || "black"}
+          variant={"h6"}
+        >
           {props.children}
         </Typography>
       </Box>
@@ -35,6 +43,7 @@ const TLDR = () => {
       imageDescription="several mathematical formulas."
       imageRatio={0.8}
       imageOrientation="right"
+      {...props}
     >
       <>
         <Question>In what locations do you offer tutoring?</Question>
