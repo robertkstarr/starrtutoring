@@ -24,7 +24,7 @@ const DefaultComponent = (props: DefaultComponentProps) => {
   return (
     <Box
       sx={{
-        width: "99vw",
+        width: "100vw",
         backgroundColor:
           (darkMode && theme.palette.primary.dark) ||
           theme.palette.primary.light,
@@ -40,7 +40,12 @@ const DefaultComponent = (props: DefaultComponentProps) => {
         }}
         justifyContent={"center"}
       >
-        <Typography align="center" variant="h3" color="secondary">
+        <Typography
+          align="center"
+          variant="h3"
+          color="secondary"
+          fontWeight="bolder"
+        >
           {props.heading}
         </Typography>
         <Box
@@ -61,6 +66,7 @@ const DefaultComponent = (props: DefaultComponentProps) => {
               flexGrow={1}
               color={(darkMode && "white") || "black"}
               fontSize={"1.25em"}
+              fontWeight={"lighter"}
             >
               {props.children}
             </Typography>

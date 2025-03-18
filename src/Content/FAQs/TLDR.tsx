@@ -21,6 +21,7 @@ const TLDR = (props: DefaultComponentProps) => {
         <Typography
           color={(darkMode && theme.palette.secondary.main) || "black"}
           variant={"h6"}
+          fontSize={"1.25em"}
         >
           {props.children}
         </Typography>
@@ -30,7 +31,7 @@ const TLDR = (props: DefaultComponentProps) => {
 
   const Answer = (props: React.PropsWithChildren) => {
     return (
-      <Box marginTop={".5rem"} marginLeft={"1rem"}>
+      <Box marginTop={".5rem"}>
         {React.createElement(React.Fragment, null, props.children)}
       </Box>
     );
