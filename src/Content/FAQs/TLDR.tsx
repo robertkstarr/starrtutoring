@@ -2,16 +2,15 @@ import { Box, Typography, useTheme } from "@mui/material";
 import React from "react";
 import Obfuscate from "react-obfuscate";
 import formulasImage from "../../assets/images/formulas.jpg";
-import DefaultComponent, {
-  DefaultComponentProps,
-} from "../DefaultComponents/DefaultComponent";
+import DefaultComponent from "../DefaultComponents/DefaultComponent";
+import { InnerComponentProps } from "../DefaultComponents/InnerComponent";
 import Paragraph from "../DefaultComponents/Paragraph";
 
 export const HOURLY_RATE = "100";
 export const EMAIL_ADDRESS = "robert@starrtutoring.com";
 export const PHONE_NUMBER = "818-378-4899";
 
-const TLDR = (props: DefaultComponentProps) => {
+const TLDR = (props: InnerComponentProps) => {
   const darkMode = props.darkMode;
   const theme = useTheme();
 

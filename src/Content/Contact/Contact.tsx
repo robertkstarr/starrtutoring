@@ -1,11 +1,10 @@
 import { Box } from "@mui/material";
 import Obfuscate from "react-obfuscate";
-import DefaultComponent, {
-  DefaultComponentProps,
-} from "../DefaultComponents/DefaultComponent";
+import DefaultComponent from "../DefaultComponents/DefaultComponent";
+import { InnerComponentProps } from "../DefaultComponents/InnerComponent";
 import { EMAIL_ADDRESS, PHONE_NUMBER } from "../FAQs/TLDR";
 
-const Contact = (props: DefaultComponentProps) => {
+const Contact = (props: InnerComponentProps) => {
   return (
     <DefaultComponent heading="Contact" sx={{ textAlign: "center" }} {...props}>
       <>

@@ -1,11 +1,10 @@
 import Amsterdam from "../../assets/images/amsterdam.jpg";
 import RobertAndMax from "../../assets/images/carrying-max.jpg";
-import DefaultComponent, {
-  DefaultComponentProps,
-} from "../DefaultComponents/DefaultComponent";
+import DefaultComponent from "../DefaultComponents/DefaultComponent";
+import { InnerComponentProps } from "../DefaultComponents/InnerComponent";
 import Paragraph from "../DefaultComponents/Paragraph";
 
-const AboutMe = (props: DefaultComponentProps) => {
+const AboutMe = (props: InnerComponentProps) => {
   return (
     <>
       <DefaultComponent

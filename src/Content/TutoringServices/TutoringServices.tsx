@@ -1,11 +1,10 @@
 import calculator from "../../assets/images/carrying-calculator.jpg";
-import DefaultComponent, {
-  DefaultComponentProps,
-} from "../DefaultComponents/DefaultComponent";
+import DefaultComponent from "../DefaultComponents/DefaultComponent";
+import { InnerComponentProps } from "../DefaultComponents/InnerComponent";
 import Paragraph from "../DefaultComponents/Paragraph";
 import { HOURLY_RATE } from "../FAQs/TLDR";
 
-const TutoringServices = (props: DefaultComponentProps) => {
+const TutoringServices = (props: InnerComponentProps) => {
   return (
     <DefaultComponent
       heading="Tutoring Services"
