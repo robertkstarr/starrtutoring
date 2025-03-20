@@ -3,6 +3,7 @@ import { Box, ThemeProvider } from "@mui/material";
 import "./App.css";
 import Content from "./Content/Content";
 import SiteFooter from "./Footer/footer";
+import Header from "./Header/header";
 import { theme } from "./Theming/DefaultTheme";
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
           flexDirection: "column",
         }}
       >
-        {/* <Header /> */}
+        <Header />
         <Box
           maxWidth={"75rem"}
           flexDirection={"column"}

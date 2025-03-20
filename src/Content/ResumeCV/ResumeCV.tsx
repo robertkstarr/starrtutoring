@@ -10,7 +10,13 @@ const ResumeCV = (props: InnerComponentProps) => {
   return (
     <DefaultComponent
       heading="Resumé/CV"
-      sx={{ justifyItems: "center" }}
+      sx={{
+        justifyItems: "center",
+        display: "-webkit-flex",
+        "webkit-justify-content": "center",
+        WebkitAlignItems: "center",
+        flexDirection: "column",
+      }}
       {...props}
     >
       <Box

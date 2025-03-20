@@ -29,11 +29,9 @@ const InnerComponent = (props: InnerComponentProps) => {
         backgroundColor:
           (darkMode && theme.palette.primary.dark) ||
           theme.palette.primary.light,
-        display: "-webkit-flex",
-        "webkit-justify-content": "center",
       }}
       justifyContent={"center"}
-      //   display={"flex"}
+      display={"flex"}
     >
       <Box
         sx={{
