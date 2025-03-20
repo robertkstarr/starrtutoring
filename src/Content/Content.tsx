@@ -27,7 +27,14 @@ export const SECTIONS = [
 
 const Content = () => {
   return (
-    <Box justifyItems={"center"}>
+    <Box
+      justifyItems={"center"}
+      sx={{
+        display: "-webkit-flex",
+        "webkit-justify-content": "center",
+        flexDirection: "column",
+      }}
+    >
       <Box textAlign={"center"} marginTop={"2rem"} id="back-to-top-anchor">
         <ImageComponent
           flexGrow={0}
